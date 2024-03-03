@@ -1,0 +1,347 @@
+
+body{
+    background-color: #f7ede2;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+nav{
+    background-color: black;
+    height:40px;
+    padding-right: 2.5rem;
+    position:sticky;
+    top: 0;
+}
+nav a{
+    color: white;
+    font-size: 1em;
+    /* border: 1px solid skyblue; */
+    padding: 0.75rem;
+    float: right;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    background-color: gray;
+}
+
+header{
+    height: 400px;
+    width: 100%;
+    background-image: url(/RestautanteHar/imagenes/headerOs.png);
+    background-size: cover;
+    background-position-y: center;
+}
+
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/**
+hay código repetidooooooooooooo, revisar
+*/
+header h1{
+    color: white;
+    font-size: 3rem;
+    margin-left: 15%;
+    padding-top: 150px;
+    font-weight:normal;
+}
+header h1 span{
+    font-size: 3rem;
+    font-weight:bolder;
+}
+header p{
+    color: white;
+    margin-left: 15%;
+
+}
+.sobreNosaltres{
+    margin: 1% 15%;
+    background-color: #f6bd60;
+    padding: 1%;
+}
+
+.primero{
+    margin:  3% 0%;
+    overflow: auto;
+    overflow: hidden;
+}
+
+.segundo{
+    margin: 3% 0%;
+    overflow: auto;
+    overflow: hidden;
+}
+
+
+.texto1{
+    padding: 3% 0% 3% 3%;
+    text-align: justify;
+    overflow: hidden;
+}
+.texto2{
+    padding: 3% 3% 3% 0%;
+    text-align: justify;
+    overflow: hidden;
+}
+.imgSN1{
+    float: left;
+    /* margin-right: 10px; */
+}
+
+.imgSN2{
+    float: right;
+    /* margin-left: 10px; */
+}
+
+.imgSN1 img, .imgSN2 img{
+    border-radius: 10px;
+}
+
+.tituloCarta{
+    margin: 2% 15%;
+    background-color: #84a59d;
+    padding: 1%;
+}
+
+.menus {
+    margin: 2% 15%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    height: auto;
+    background-color: #84a59d;
+    padding: 1%;
+}
+
+.titleMenu {
+    background-color:#f28482;
+    color: white;
+    text-align: center;
+    grid-column: span 5;
+    padding: 10px;
+}
+
+.item1 {
+    grid-column: span 1;
+    grid-row: span 3;
+    border: 1px solid black;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item2 {
+    grid-column: span 4;
+    grid-row: span 1;
+    text-align: justify;
+}
+
+.item3 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(/RestautanteHar/imagenes/imgGrid1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.item4 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(/RestautanteHar/imagenes/imgGrid1-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+
+.contenidor {
+    margin: 3% 15%;
+    background-color: #f28482;
+    padding: 1%;
+
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.imagenes img {
+    width: calc(25% - 22px); 
+    margin-bottom: 20px; 
+    border: 1px solid transparent;
+    padding: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.imagenes img:nth-child(2n) {
+    margin-left: 20px; 
+}
+
+.imagenes img:hover {
+    border-color: whitesmoke;
+    filter: brightness(40%);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.contacto {
+    display: flex;
+    padding: 0px;
+}
+
+footer div {
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    color: #fff;
+}
+
+.mail, .mob{
+    padding-left: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto; 
+}
+
+.nombre-fo{
+    padding-top: 15px;
+}
+
+/* ----------------------Media querries----------------------------------- */
+
+@media (max-width: 800px){
+
+    /* -----------------sobre nosaltres-------------------- */
+    .imgSN1{
+        width: 100%;
+    }
+    
+    .texto1{
+        width: 100%;
+        margin-top: 16px;
+    }
+    .sobreNosaltres h3{
+        margin-bottom: 16px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .texto2{
+        float:none;
+        width: 100%;
+        margin-top: 16px;
+    }
+    .imgSN2{
+        float:none;
+        width: 100%;
+    }
+    /* -----------------carta-------------------- */ 
+    .menus {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .titleMenu {
+        grid-column: span 3;
+    }
+    
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 5;    
+    }
+    
+    .item2 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .item3 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .item4 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* -----------------galeria-------------------- */
+    .imagenes img {
+        width: calc(50% - 10px); 
+        margin-left: 0; 
+        margin-bottom: 10px;
+    }
+
+    .imagenes {
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 600px){
+    /* -----------------carta-------------------- */ 
+    .menus {
+        grid-template-columns: 1fr;
+    }
+
+    .titleMenu {
+        grid-column: span 1;
+    }
+    
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 5;    
+    }
+    
+    .item2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .item3 {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    
+    .item4 {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    /* -----------------galeria-------------------- */
+    .imagenes img {
+        width: calc(100% - 10px); 
+        margin-left: 0; 
+        margin-bottom: 10px;
+    }
+    .imagenes img:nth-child(2n) {
+        margin-left: 0px; 
+    }
+
+    .imagenes {
+        justify-content: center; 
+    }
+}
+
+
+
+
+
+
+
