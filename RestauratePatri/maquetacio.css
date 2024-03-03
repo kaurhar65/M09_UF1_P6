@@ -1,0 +1,399 @@
+body{
+    margin: 0px;
+    padding: 0%;
+    background-color: rgb(237, 236, 224);
+}
+header{
+    background-color:#970B12;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 3em;
+    
+    
+}a{
+    position: right;
+    font-family: system-ui;
+    color: #FFCCCC;
+    float: right;
+    height: calc(100% - 20px);
+    padding: 0.8rem;
+    text-decoration: none;
+
+}
+
+a:hover{
+    display: block;
+    text-decoration: underline;
+    color: pink;
+}
+.intro{
+   
+    float: inline-start;
+    height:425px;   
+    width: 100%;
+    background-image: url('./Imatges/Restaurantluxe.jpg');
+    background-position: center;
+    float: right;
+}
+
+.titleandsubtitleIntro{
+    margin-left:80px;
+    margin-top: 10em;
+}
+
+.titleIntro{
+    color: white;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: normal;
+    
+
+}
+.titleIntro span{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: normal;
+
+
+}
+.textIntro{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 8px;
+}
+
+
+
+/*Part infoBLocks*/
+.infoBlocks{
+    margin-top: 72px;
+    margin-left: 15%;
+    margin-right: 15%;
+    float: inline-end;
+    
+}
+/* 
+Part sobre nosaltres */
+.sobreNosaltres{
+    background-color: #F6BD60;
+}
+.titleSection{
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.imatge1{
+    float:left;
+    width: 30%;
+}
+
+.text1{
+    float: right;
+    width: 66%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 24px;
+}
+.text1 p{
+    margin: 0%;
+}
+
+.imatge2{
+    float:right;
+    width: 30%;
+}
+img{
+    border-radius: 4px;
+}
+
+.text2{
+    float: left;
+    width: 66%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 24px;
+}
+
+.text2 p{
+    margin: 0%;
+}
+
+.primerdivSN{
+    margin-bottom: 32px;
+    float: inline-start;
+    background-color: #F6BD60;
+}
+
+.segondivSN{
+    float:inline-end;
+    margin-bottom: 128px;
+    background-color: #F6BD60;
+}
+    
+/*Part carta*/
+.titleSection1{
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    background-color: #84A59D;
+}
+.cartes{
+    display: grid;
+    grid-template-rows:50% 50% ;
+    gap: 32px;
+    margin-bottom: 150px;
+    background-color: #84A59D;
+}
+.carta{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows:13% 40% 40% ;
+    grid-gap: 16px;
+    height: 475px;
+    margin:0px;
+}
+
+.carta2{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 16px;
+    height: 400px;
+}
+.menu{
+    grid-column: 1/4;
+    grid-row: 1;
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    background-color: #F28482;
+}
+.Menu1esq{
+    grid-column: 1;
+    grid-row:2/4;
+    text-align: center;
+    border: 1px solid black;
+    height: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textCarta1{
+    grid-column: 2/4;
+    grid-row:2;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textCarta1 span{
+    font-weight: 700;
+    font-size: 30px;
+}
+.imatge1Menu1{
+    grid-column: 2;
+    grid-row:3;
+    background-image: url('./Imatges/alitas.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.imatge2Menu1{
+    grid-column: 3;
+    grid-row:3;
+    background-image: url('./Imatges/patatas.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.Menu2esq{
+    grid-column: 1;
+    grid-row:1/3;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid black;
+    height: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textCarta2{
+    grid-column: 2/4;
+    grid-row:1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textCarta2 span{
+    font-weight: 700;
+    font-size: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.imatge1Menu2{
+    grid-column: 2;
+    grid-row:2;
+    background-image: url('./Imatges/ramen.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.imatge2Menu2{
+    grid-column: 3;
+    grid-row:2;
+    background-image: url('./Imatges/salmon.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.titolGaleria{
+    margin-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.galeriaContenidor{
+    background-color: #F28482;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.galeria div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 25%;
+}
+.galeria div img{
+    height: 50%;
+    width: 50%;
+}
+.footer{
+    display: flex;
+    gap:1280px;
+    position:static;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:30px;
+    width: 100%;
+    bottom: 0px;
+    
+}
+@media (max-width: 600px){
+    .imatge1{
+        width: 100%;
+    }
+    
+    .text1{
+        width: 100%;
+        margin-top: 16px;
+    }
+    .titleSection{
+        margin-bottom: 16px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .text2{
+        float:none;
+        width: 100%;
+        margin-top: 16px;
+    }
+    .imatge2{
+        float:none;
+        width: 100%;
+    }
+    .cartes{
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 60%;
+        
+        
+    }
+    .carta{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 50% 30% 30% ;        
+        grid-row:1;
+    }
+    .carta2{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 70% 30% 30% ;
+        grid-row:2;
+        margin-top: 40px;
+    }
+    .menu{
+        grid-column: 1;
+        grid-row:1;
+    }
+    .Menu1esq{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .textCarta1{
+        grid-column: 1;
+        grid-row:3;
+    }
+    .imatge1Menu1{
+        grid-column: 1;
+        grid-row:4;
+    }
+    .imatge2Menu1{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .Menu2esq{
+        grid-column: 1;
+        grid-row:1;
+    }
+    .textCarta2{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .imatge1Menu2{
+        grid-column: 1;
+        grid-row:3;
+    }
+    .imatge2Menu2{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .titolGaleria{
+        margin-top: 400px;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        gap :16px;
+    }
+    .galeria div img{
+        height: 300px;
+        width: 350px;
+    }
+}
+
